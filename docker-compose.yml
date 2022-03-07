@@ -8,6 +8,7 @@ services:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
   node-app:
     build: .
+    image: kumaradityaraj/node-app
     environment:
       - PORT=3000
     depends_on:
@@ -15,8 +16,8 @@ services:
   mongo:
     image: mongo
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=adityaraj1
-      - MONGO_INITDB_ROOT_PASSWORD=rkamsmaasa4920
+      - MONGO_INITDB_ROOT_USERNAME=
+      - MONGO_INITDB_ROOT_PASSWORD=
     volumes:
       - mongo-db:/data/db
   redis:
@@ -24,4 +25,3 @@ services:
 
 volumes:
   mongo-db:
- 
