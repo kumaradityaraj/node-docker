@@ -39,4 +39,4 @@
 ![](https://github.com/kumaradityaraj/node-docker/blob/main/Screenshot%20from%202022-03-12%2010-29-52.png)
 
 #### DockerHub Image
-**`docker push kumaradityaraj/node-app:tagname`**
+**`docker pull kumaradityaraj/node-app`**
